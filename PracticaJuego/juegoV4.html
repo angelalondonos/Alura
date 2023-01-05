@@ -58,15 +58,13 @@
             var x = evento.pageX - pantalla.offsetLeft;
             var y = evento.pageY - pantalla.offsetTop;
 
-            if ((x < xAleatorio + radio) && 
-			(x > xAleatorio - radio) &&
-			(y < yAleatorio + radio) &&
-			(y > yAleatorio - radio) ) {
-			alert("Tiro Certero");
-		}
-
+            if ((x < xAleatorio + radio) &&
+                (x > xAleatorio - radio) &&
+                (y < yAleatorio + radio) &&
+                (y > yAleatorio - radio)) {
+                alert("Tiro Certero");
+            }
         }
-
         pantalla.onclick = disparar;
 
     </script>
