@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <meta charset="UTF-8" />
+
+    <h1>PROGRAMA JUEGO DE ADIVINACION</h1>
+
+    <script>
+      function saltarLinea() {
+        document.write("<br>");
+        document.write("<br>");
+        document.write("<br>");
+      }
+
+      function imprimir(frase) {
+        document.write(frase);
+        saltarLinea();
+      }
+
+      var n = parseInt(prompt("Ingrese la cantidad de números "));
+      var numeroPensado = loteria(n);
+
+      function loteria (n){
+        numero = Math.round(Math.random() * n);
+        return numero;
+      }
+      
+      if (numeroPensado == n) {
+        imprimir("usted acertó");
+      } else {
+        imprimir("usted erró, el número pensado era " + numeroPensado);
+      }
+
+    </script>
+  </body>
+</html>
